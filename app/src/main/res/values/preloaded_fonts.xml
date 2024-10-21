@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/akronim</item>
+        <item>@font/alex_brush</item>
+        <item>@font/bilbo_swash_caps</item>
+        <item>@font/bungee_shade</item>
+        <item>@font/caveat_brush</item>
+        <item>@font/covered_by_your_grace</item>
+        <item>@font/wire_one</item>
+        <item>@font/zeyada</item>
+    </array>
+</resources>

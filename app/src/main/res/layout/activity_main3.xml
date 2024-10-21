@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:gravity="center"
+    tools:context=".MainActivity3"
+    android:background="#F5F1E4"
+    android:layout_gravity="center"
+    app:layout_gravity="center"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="175dp"
+
+                    app:srcCompat="@drawable/p"
+
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardCornerRadius="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/idprod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+
+                            android:ems="10"
+                            android:hint="Ingrese codigo del producto"
+                            android:inputType="number"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/descprod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+
+                            android:ems="10"
+                            android:hint="Ingrese descripcion del producto"
+                            android:inputType="textCapWords"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/precioprod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+
+                            android:ems="10"
+                            android:hint="Ingrese precio  del producto"
+                            android:inputType="numberDecimal"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/cantidadprod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+                            android:ems="10"
+                            android:hint="Ingrese stock del producto"
+                            android:inputType="number"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <ImageButton
+                    android:id="@+id/button3"
+                    android:layout_width="81dp"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/cb"
+                    android:text="escanear articulo"
+                    app:layout_constraintBottom_toTopOf="@+id/button4"
+                    tools:ignore="SpeakableTextPresentCheck"
+
+
+                    tools:layout_editor_absoluteX="29dp" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="315dp"
+                    android:layout_height="67dp"
+                    android:layout_marginLeft="50dp"
+
+                    android:layout_marginRight="50dp"
+
+                    android:backgroundTint="#8BC34A"
+                    android:text="Registar articulo"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button3" />
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

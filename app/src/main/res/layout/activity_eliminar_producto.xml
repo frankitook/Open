@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EliminarProducto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F5F1E4"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+
+        android:layout_marginHorizontal="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="131dp"
+                android:layout_height="91dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/prod"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <TextView
+                android:id="@+id/ena"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/eca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+
+
+                <TextView
+                    android:id="@+id/epa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:textColor="#000000"
+
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    />
+
+
+            <TextView
+                android:id="@+id/esa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/elimina"
+        android:layout_width="345dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:text="Eliminar producto"
+        app:backgroundTint="#FF0000" />
+</LinearLayout>

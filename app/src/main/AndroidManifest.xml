@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.gestion">
+
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_tienda"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_tienda_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gestion">
+        <activity
+            android:name=".HistorialDeVentas"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MostrarPDF"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ModificarProductoSeleccionado"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EliminarProducto"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GraficoEstadistico"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".FinalizarPedido"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IndicarCantidad"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActualizarContacto"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cargar_proveedores"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainProveedores"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".More"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity8"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity7"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity6"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity5"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity4"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Prueba"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SQLiteService" />
+        <activity
+            android:name=".MainActivity3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity2"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ActivityOne" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

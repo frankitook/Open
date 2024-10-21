@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity7"
+
+    android:layout_gravity="center"
+    android:gravity="center"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="704dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:id="@+id/nombre1"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="264dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/telefono1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="183dp"
+                    android:paddingLeft="10dp"
+                    android:text="TextView"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/direccion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="107dp"
+                    android:paddingLeft="10dp"
+                    android:text="Direccion: Acevedo 831"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="142dp"
+                    android:layout_height="119dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginEnd="121dp"
+                    android:layout_marginRight="121dp"
+                    android:layout_marginBottom="348dp"
+                    app:srcCompat="@drawable/usuario" />
+
+                <ImageButton
+                    android:id="@+id/wsp"
+                    android:layout_width="54dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="221dp"
+                    android:layout_marginRight="221dp"
+                    android:layout_marginBottom="22dp"
+                    android:background="@drawable/what1"
+
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/llamada"
+                    android:layout_width="54dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="101dp"
+                    android:layout_marginRight="101dp"
+                    android:layout_marginBottom="22dp"
+                    android:background="@drawable/llamada"
+
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="-2dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="98dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/editar"
+                android:layout_width="180dp"
+                android:layout_height="61dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Editar contacto"
+                app:backgroundTint="#03A9F4" />
+
+            <Button
+                android:id="@+id/basura"
+                android:layout_width="200dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="ELiminar contacto"
+                app:backgroundTint="#FF0000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
