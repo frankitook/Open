@@ -18,4 +18,4 @@ This Java-based application is designed to streamline and manage sales operation
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/sales-management-app.git
+   git clone https://github.com/frankitook/Open.git
